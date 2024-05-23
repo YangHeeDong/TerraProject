@@ -1,0 +1,28 @@
+INFO  24-05-23 18:13:20[background-preinit] [Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+INFO  24-05-23 18:13:20[restartedMain] [AssignmentApplication:50] - Starting AssignmentApplication using Java 17.0.9 with PID 15020 (D:\GitHub\assignment\build\classes\java\main started by Èñµ¿¾ç in D:\GitHub\assignment)
+INFO  24-05-23 18:13:20[restartedMain] [AssignmentApplication:660] - The following 1 profile is active: "dev"
+INFO  24-05-23 18:13:20[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  24-05-23 18:13:20[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  24-05-23 18:13:21[restartedMain] [RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  24-05-23 18:13:21[restartedMain] [RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+INFO  24-05-23 18:13:21[restartedMain] [TomcatWebServer:109] - Tomcat initialized with port 8090 (http)
+INFO  24-05-23 18:13:21[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  24-05-23 18:13:22[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  24-05-23 18:13:22[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+INFO  24-05-23 18:13:22[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  24-05-23 18:13:22[restartedMain] [ServletWebServerApplicationContext:296] - Root WebApplicationContext: initialization completed in 1663 ms
+INFO  24-05-23 18:13:22[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  24-05-23 18:13:22[restartedMain] [HikariPool:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:~/local user=SA
+INFO  24-05-23 18:13:22[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  24-05-23 18:13:22[restartedMain] [H2ConsoleAutoConfiguration:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/local'
+INFO  24-05-23 18:13:22[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  24-05-23 18:13:22[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 6.4.4.Final
+INFO  24-05-23 18:13:22[restartedMain] [RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+INFO  24-05-23 18:13:23[restartedMain] [SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  24-05-23 18:13:23[restartedMain] [JtaPlatformInitiator:58] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+INFO  24-05-23 18:13:23[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  24-05-23 18:13:23[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:232] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  24-05-23 18:13:23[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  24-05-23 18:13:23[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8090"]
+INFO  24-05-23 18:13:23[restartedMain] [TomcatWebServer:241] - Tomcat started on port 8090 (http) with context path ''
+INFO  24-05-23 18:13:23[restartedMain] [AssignmentApplication:56] - Started AssignmentApplication in 3.995 seconds (process running for 4.425)
