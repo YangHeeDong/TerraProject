@@ -1,28 +1,1273 @@
-INFO  24-05-23 18:13:20[background-preinit] [Version:21] - HV000001: Hibernate Validator 8.0.1.Final
-INFO  24-05-23 18:13:20[restartedMain] [AssignmentApplication:50] - Starting AssignmentApplication using Java 17.0.9 with PID 15020 (D:\GitHub\assignment\build\classes\java\main started by Èñµ¿¾ç in D:\GitHub\assignment)
-INFO  24-05-23 18:13:20[restartedMain] [AssignmentApplication:660] - The following 1 profile is active: "dev"
-INFO  24-05-23 18:13:20[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-INFO  24-05-23 18:13:20[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-INFO  24-05-23 18:13:21[restartedMain] [RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  24-05-23 18:13:21[restartedMain] [RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
-INFO  24-05-23 18:13:21[restartedMain] [TomcatWebServer:109] - Tomcat initialized with port 8090 (http)
-INFO  24-05-23 18:13:21[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8090"]
-INFO  24-05-23 18:13:22[restartedMain] [StandardService:173] - Starting service [Tomcat]
-INFO  24-05-23 18:13:22[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
-INFO  24-05-23 18:13:22[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
-INFO  24-05-23 18:13:22[restartedMain] [ServletWebServerApplicationContext:296] - Root WebApplicationContext: initialization completed in 1663 ms
-INFO  24-05-23 18:13:22[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  24-05-23 18:13:22[restartedMain] [HikariPool:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:~/local user=SA
-INFO  24-05-23 18:13:22[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  24-05-23 18:13:22[restartedMain] [H2ConsoleAutoConfiguration:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/local'
-INFO  24-05-23 18:13:22[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  24-05-23 18:13:22[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 6.4.4.Final
-INFO  24-05-23 18:13:22[restartedMain] [RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
-INFO  24-05-23 18:13:23[restartedMain] [SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
-INFO  24-05-23 18:13:23[restartedMain] [JtaPlatformInitiator:58] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-INFO  24-05-23 18:13:23[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  24-05-23 18:13:23[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:232] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  24-05-23 18:13:23[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
-INFO  24-05-23 18:13:23[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8090"]
-INFO  24-05-23 18:13:23[restartedMain] [TomcatWebServer:241] - Tomcat started on port 8090 (http) with context path ''
-INFO  24-05-23 18:13:23[restartedMain] [AssignmentApplication:56] - Started AssignmentApplication in 3.995 seconds (process running for 4.425)
+INFO  24-05-23 22:15:55[background-preinit] [Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+INFO  24-05-23 22:15:55[restartedMain] [AssignmentApplication:50] - Starting AssignmentApplication using Java 17.0.9 with PID 21944 (D:\GitHub\assignment\build\classes\java\main started by Èñµ¿¾ç in D:\GitHub\assignment)
+INFO  24-05-23 22:15:55[restartedMain] [AssignmentApplication:660] - The following 1 profile is active: "dev"
+INFO  24-05-23 22:15:55[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  24-05-23 22:15:55[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  24-05-23 22:15:56[restartedMain] [RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  24-05-23 22:15:56[restartedMain] [RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+INFO  24-05-23 22:15:57[restartedMain] [TomcatWebServer:109] - Tomcat initialized with port 8090 (http)
+INFO  24-05-23 22:15:57[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  24-05-23 22:15:57[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  24-05-23 22:15:57[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+INFO  24-05-23 22:15:57[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  24-05-23 22:15:57[restartedMain] [ServletWebServerApplicationContext:296] - Root WebApplicationContext: initialization completed in 1699 ms
+INFO  24-05-23 22:15:57[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  24-05-23 22:15:57[restartedMain] [HikariPool:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:~/local user=SA
+INFO  24-05-23 22:15:57[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  24-05-23 22:15:57[restartedMain] [H2ConsoleAutoConfiguration:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/local'
+INFO  24-05-23 22:15:57[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  24-05-23 22:15:57[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 6.4.4.Final
+INFO  24-05-23 22:15:57[restartedMain] [RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+INFO  24-05-23 22:15:58[restartedMain] [SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  24-05-23 22:15:58[restartedMain] [JtaPlatformInitiator:58] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+INFO  24-05-23 22:15:58[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  24-05-23 22:15:59[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:232] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  24-05-23 22:15:59[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  24-05-23 22:15:59[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8090"]
+INFO  24-05-23 22:15:59[restartedMain] [TomcatWebServer:241] - Tomcat started on port 8090 (http) with context path ''
+INFO  24-05-23 22:15:59[restartedMain] [AssignmentApplication:56] - Started AssignmentApplication in 4.756 seconds (process running for 5.176)
+TRACE 24-05-23 22:16:00[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:16:00[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:00.270343600]
+TRACE 24-05-23 22:16:00[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:00.270343600]
+TRACE 24-05-23 22:16:00[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [1]
+TRACE 24-05-23 22:16:01[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.69]
+TRACE 24-05-23 22:16:01[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:01.352148800]
+TRACE 24-05-23 22:16:01[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:01.352148800]
+TRACE 24-05-23 22:16:01[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [2]
+TRACE 24-05-23 22:16:02[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.95]
+TRACE 24-05-23 22:16:02[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:02.367697300]
+TRACE 24-05-23 22:16:02[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:02.367697300]
+TRACE 24-05-23 22:16:02[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [3]
+TRACE 24-05-23 22:16:03[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.01]
+TRACE 24-05-23 22:16:03[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:03.384264500]
+TRACE 24-05-23 22:16:03[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:03.384264500]
+TRACE 24-05-23 22:16:03[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [4]
+TRACE 24-05-23 22:16:04[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:16:04[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:04.390833]
+TRACE 24-05-23 22:16:04[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:04.390833]
+TRACE 24-05-23 22:16:04[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [5]
+TRACE 24-05-23 22:16:05[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.38]
+TRACE 24-05-23 22:16:05[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:05.404508100]
+TRACE 24-05-23 22:16:05[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:05.404508100]
+TRACE 24-05-23 22:16:05[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [6]
+TRACE 24-05-23 22:16:06[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.25]
+TRACE 24-05-23 22:16:06[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:06.413382]
+TRACE 24-05-23 22:16:06[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:06.413382]
+TRACE 24-05-23 22:16:06[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [7]
+TRACE 24-05-23 22:16:07[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.47]
+TRACE 24-05-23 22:16:07[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:07.425967700]
+TRACE 24-05-23 22:16:07[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:07.425967700]
+TRACE 24-05-23 22:16:07[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [8]
+TRACE 24-05-23 22:16:08[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.15]
+TRACE 24-05-23 22:16:08[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:08.434340]
+TRACE 24-05-23 22:16:08[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:08.434340]
+TRACE 24-05-23 22:16:08[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [9]
+TRACE 24-05-23 22:16:09[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.74]
+TRACE 24-05-23 22:16:09[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:09.448049500]
+TRACE 24-05-23 22:16:09[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:09.448049500]
+TRACE 24-05-23 22:16:09[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [10]
+TRACE 24-05-23 22:16:10[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.65]
+TRACE 24-05-23 22:16:10[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:10.457926100]
+TRACE 24-05-23 22:16:10[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:10.457926100]
+TRACE 24-05-23 22:16:10[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [11]
+TRACE 24-05-23 22:16:11[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.81]
+TRACE 24-05-23 22:16:11[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:11.472424500]
+TRACE 24-05-23 22:16:11[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:11.472424500]
+TRACE 24-05-23 22:16:11[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [12]
+TRACE 24-05-23 22:16:12[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.6]
+TRACE 24-05-23 22:16:12[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:12.480031500]
+TRACE 24-05-23 22:16:12[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:12.480031500]
+TRACE 24-05-23 22:16:12[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [13]
+TRACE 24-05-23 22:16:13[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.75]
+TRACE 24-05-23 22:16:13[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:13.494457]
+TRACE 24-05-23 22:16:13[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:13.494457]
+TRACE 24-05-23 22:16:13[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [14]
+TRACE 24-05-23 22:16:14[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:16:14[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:14.511743300]
+TRACE 24-05-23 22:16:14[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:14.511743300]
+TRACE 24-05-23 22:16:14[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [15]
+TRACE 24-05-23 22:16:15[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.84]
+TRACE 24-05-23 22:16:15[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:15.520848]
+TRACE 24-05-23 22:16:15[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:15.520848]
+TRACE 24-05-23 22:16:15[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [16]
+INFO  24-05-23 22:16:33[background-preinit] [Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+INFO  24-05-23 22:16:33[restartedMain] [AssignmentApplication:50] - Starting AssignmentApplication using Java 17.0.9 with PID 20868 (D:\GitHub\assignment\build\classes\java\main started by Èñµ¿¾ç in D:\GitHub\assignment)
+INFO  24-05-23 22:16:33[restartedMain] [AssignmentApplication:660] - The following 1 profile is active: "dev"
+INFO  24-05-23 22:16:33[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  24-05-23 22:16:33[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  24-05-23 22:16:34[restartedMain] [RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  24-05-23 22:16:34[restartedMain] [RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface.
+INFO  24-05-23 22:16:34[restartedMain] [TomcatWebServer:109] - Tomcat initialized with port 8090 (http)
+INFO  24-05-23 22:16:34[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  24-05-23 22:16:34[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  24-05-23 22:16:34[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+INFO  24-05-23 22:16:34[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  24-05-23 22:16:34[restartedMain] [ServletWebServerApplicationContext:296] - Root WebApplicationContext: initialization completed in 1632 ms
+INFO  24-05-23 22:16:34[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  24-05-23 22:16:35[restartedMain] [HikariPool:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:~/local user=SA
+INFO  24-05-23 22:16:35[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  24-05-23 22:16:35[restartedMain] [H2ConsoleAutoConfiguration:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/local'
+INFO  24-05-23 22:16:35[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  24-05-23 22:16:35[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 6.4.4.Final
+INFO  24-05-23 22:16:35[restartedMain] [RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+INFO  24-05-23 22:16:35[restartedMain] [SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  24-05-23 22:16:36[restartedMain] [JtaPlatformInitiator:58] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+INFO  24-05-23 22:16:36[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  24-05-23 22:16:36[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:232] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  24-05-23 22:16:37[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  24-05-23 22:16:37[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8090"]
+INFO  24-05-23 22:16:37[restartedMain] [TomcatWebServer:241] - Tomcat started on port 8090 (http) with context path ''
+INFO  24-05-23 22:16:37[restartedMain] [AssignmentApplication:56] - Started AssignmentApplication in 4.733 seconds (process running for 5.15)
+TRACE 24-05-23 22:16:38[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:16:38[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:38.022015300]
+TRACE 24-05-23 22:16:38[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:38.022015300]
+TRACE 24-05-23 22:16:38[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [1]
+TRACE 24-05-23 22:16:39[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.01]
+TRACE 24-05-23 22:16:39[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:39.109081]
+TRACE 24-05-23 22:16:39[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:39.109081]
+TRACE 24-05-23 22:16:39[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [2]
+TRACE 24-05-23 22:16:40[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.34]
+TRACE 24-05-23 22:16:40[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:40.119555400]
+TRACE 24-05-23 22:16:40[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:40.119555400]
+TRACE 24-05-23 22:16:40[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [3]
+TRACE 24-05-23 22:16:41[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.58]
+TRACE 24-05-23 22:16:41[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:41.132607100]
+TRACE 24-05-23 22:16:41[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:41.132607100]
+TRACE 24-05-23 22:16:41[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [4]
+TRACE 24-05-23 22:16:42[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.5]
+TRACE 24-05-23 22:16:42[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:42.142903]
+TRACE 24-05-23 22:16:42[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:42.142903]
+TRACE 24-05-23 22:16:42[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [5]
+TRACE 24-05-23 22:16:43[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [4.2]
+TRACE 24-05-23 22:16:43[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:43.150085100]
+TRACE 24-05-23 22:16:43[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:43.150085100]
+TRACE 24-05-23 22:16:43[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [6]
+TRACE 24-05-23 22:16:44[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.02]
+TRACE 24-05-23 22:16:44[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:44.162048600]
+TRACE 24-05-23 22:16:44[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:44.162048600]
+TRACE 24-05-23 22:16:44[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [7]
+TRACE 24-05-23 22:16:45[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:16:45[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:45.171048900]
+TRACE 24-05-23 22:16:45[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:45.171048900]
+TRACE 24-05-23 22:16:45[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [8]
+TRACE 24-05-23 22:16:46[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.42]
+TRACE 24-05-23 22:16:46[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:46.179225]
+TRACE 24-05-23 22:16:46[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:46.179225]
+TRACE 24-05-23 22:16:46[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [9]
+TRACE 24-05-23 22:16:47[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.0]
+TRACE 24-05-23 22:16:47[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:16:47.190216700]
+TRACE 24-05-23 22:16:47[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:16:47.190216700]
+TRACE 24-05-23 22:16:47[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [10]
+INFO  24-05-23 22:19:02[background-preinit] [Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+INFO  24-05-23 22:19:02[restartedMain] [AssignmentApplication:50] - Starting AssignmentApplication using Java 17.0.9 with PID 1472 (D:\GitHub\assignment\build\classes\java\main started by Èñµ¿¾ç in D:\GitHub\assignment)
+INFO  24-05-23 22:19:02[restartedMain] [AssignmentApplication:660] - The following 1 profile is active: "dev"
+INFO  24-05-23 22:19:02[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  24-05-23 22:19:02[restartedMain] [DevToolsPropertyDefaultsPostProcessor:252] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  24-05-23 22:19:02[restartedMain] [RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  24-05-23 22:19:02[restartedMain] [RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interface.
+INFO  24-05-23 22:19:03[restartedMain] [TomcatWebServer:109] - Tomcat initialized with port 8090 (http)
+INFO  24-05-23 22:19:03[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8090"]
+INFO  24-05-23 22:19:03[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  24-05-23 22:19:03[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+INFO  24-05-23 22:19:03[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  24-05-23 22:19:03[restartedMain] [ServletWebServerApplicationContext:296] - Root WebApplicationContext: initialization completed in 1777 ms
+INFO  24-05-23 22:19:03[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  24-05-23 22:19:04[restartedMain] [HikariPool:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:~/local user=SA
+INFO  24-05-23 22:19:04[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  24-05-23 22:19:04[restartedMain] [H2ConsoleAutoConfiguration:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/local'
+INFO  24-05-23 22:19:04[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  24-05-23 22:19:04[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 6.4.4.Final
+INFO  24-05-23 22:19:04[restartedMain] [RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+INFO  24-05-23 22:19:04[restartedMain] [SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  24-05-23 22:19:05[restartedMain] [JtaPlatformInitiator:58] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+INFO  24-05-23 22:19:05[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  24-05-23 22:19:05[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:232] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  24-05-23 22:19:06[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  24-05-23 22:19:06[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8090"]
+INFO  24-05-23 22:19:06[restartedMain] [TomcatWebServer:241] - Tomcat started on port 8090 (http) with context path ''
+INFO  24-05-23 22:19:06[restartedMain] [AssignmentApplication:56] - Started AssignmentApplication in 4.914 seconds (process running for 5.325)
+TRACE 24-05-23 22:19:07[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:19:07[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:07.001077500]
+TRACE 24-05-23 22:19:07[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:07.001077500]
+TRACE 24-05-23 22:19:07[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [1]
+ERROR 24-05-23 22:19:07[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:08[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.14]
+TRACE 24-05-23 22:19:08[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:08.077200700]
+TRACE 24-05-23 22:19:08[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:08.077200700]
+TRACE 24-05-23 22:19:08[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [2]
+ERROR 24-05-23 22:19:08[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:09[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.24]
+TRACE 24-05-23 22:19:09[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:09.087823900]
+TRACE 24-05-23 22:19:09[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:09.087823900]
+TRACE 24-05-23 22:19:09[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [3]
+ERROR 24-05-23 22:19:09[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:10[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.19]
+TRACE 24-05-23 22:19:10[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:10.102317900]
+TRACE 24-05-23 22:19:10[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:10.102317900]
+TRACE 24-05-23 22:19:10[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [4]
+ERROR 24-05-23 22:19:10[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:11[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.11]
+TRACE 24-05-23 22:19:11[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:11.115021100]
+TRACE 24-05-23 22:19:11[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:11.115021100]
+TRACE 24-05-23 22:19:11[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [5]
+ERROR 24-05-23 22:19:11[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:12[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.64]
+TRACE 24-05-23 22:19:12[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:12.129139700]
+TRACE 24-05-23 22:19:12[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:12.129139700]
+TRACE 24-05-23 22:19:12[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [6]
+ERROR 24-05-23 22:19:12[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:13[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.71]
+TRACE 24-05-23 22:19:13[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:13.142954500]
+TRACE 24-05-23 22:19:13[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:13.142954500]
+TRACE 24-05-23 22:19:13[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [7]
+ERROR 24-05-23 22:19:13[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:14[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.62]
+TRACE 24-05-23 22:19:14[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:14.158565]
+TRACE 24-05-23 22:19:14[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:14.158565]
+TRACE 24-05-23 22:19:14[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [8]
+ERROR 24-05-23 22:19:14[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:15[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.75]
+TRACE 24-05-23 22:19:15[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:15.176873400]
+TRACE 24-05-23 22:19:15[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:15.176873400]
+TRACE 24-05-23 22:19:15[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [9]
+ERROR 24-05-23 22:19:15[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:16[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.36]
+TRACE 24-05-23 22:19:16[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:16.186161200]
+TRACE 24-05-23 22:19:16[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:16.186161200]
+TRACE 24-05-23 22:19:16[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [10]
+ERROR 24-05-23 22:19:16[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:17[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.7]
+TRACE 24-05-23 22:19:17[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:17.191320300]
+TRACE 24-05-23 22:19:17[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:17.191320300]
+TRACE 24-05-23 22:19:17[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [11]
+ERROR 24-05-23 22:19:17[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:18[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:19:18[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:18.200854300]
+TRACE 24-05-23 22:19:18[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:18.200854300]
+TRACE 24-05-23 22:19:18[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [12]
+ERROR 24-05-23 22:19:18[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:19[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.27]
+TRACE 24-05-23 22:19:19[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:19.209238]
+TRACE 24-05-23 22:19:19[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:19.209238]
+TRACE 24-05-23 22:19:19[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [13]
+ERROR 24-05-23 22:19:19[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:20[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.01]
+TRACE 24-05-23 22:19:20[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:20.225064]
+TRACE 24-05-23 22:19:20[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:20.225064]
+TRACE 24-05-23 22:19:20[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [14]
+ERROR 24-05-23 22:19:20[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:21[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:19:21[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:21.236648500]
+TRACE 24-05-23 22:19:21[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:21.236648500]
+TRACE 24-05-23 22:19:21[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [15]
+ERROR 24-05-23 22:19:21[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:22[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.15]
+TRACE 24-05-23 22:19:22[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:22.247747500]
+TRACE 24-05-23 22:19:22[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:22.247747500]
+TRACE 24-05-23 22:19:22[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [16]
+ERROR 24-05-23 22:19:22[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:23[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [3.87]
+TRACE 24-05-23 22:19:23[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:23.260457600]
+TRACE 24-05-23 22:19:23[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:23.260457600]
+TRACE 24-05-23 22:19:23[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [17]
+ERROR 24-05-23 22:19:23[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:24[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [3.97]
+TRACE 24-05-23 22:19:24[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:24.278405800]
+TRACE 24-05-23 22:19:24[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:24.278405800]
+TRACE 24-05-23 22:19:24[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [18]
+ERROR 24-05-23 22:19:24[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:25[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [3.8]
+TRACE 24-05-23 22:19:25[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:25.290503600]
+TRACE 24-05-23 22:19:25[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:25.290503600]
+TRACE 24-05-23 22:19:25[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [19]
+ERROR 24-05-23 22:19:25[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:26[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:19:26[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:26.297644600]
+TRACE 24-05-23 22:19:26[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:26.297644600]
+TRACE 24-05-23 22:19:26[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [20]
+ERROR 24-05-23 22:19:26[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:27[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.25]
+TRACE 24-05-23 22:19:27[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:27.302344200]
+TRACE 24-05-23 22:19:27[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:27.302344200]
+TRACE 24-05-23 22:19:27[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [21]
+ERROR 24-05-23 22:19:27[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:28[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [1.11]
+TRACE 24-05-23 22:19:28[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:28.317566700]
+TRACE 24-05-23 22:19:28[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:28.317566700]
+TRACE 24-05-23 22:19:28[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [22]
+ERROR 24-05-23 22:19:28[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:29[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.88]
+TRACE 24-05-23 22:19:29[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:29.327376600]
+TRACE 24-05-23 22:19:29[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:29.327376600]
+TRACE 24-05-23 22:19:29[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [23]
+ERROR 24-05-23 22:19:29[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:30[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.06]
+TRACE 24-05-23 22:19:30[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:30.333416500]
+TRACE 24-05-23 22:19:30[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:30.333416500]
+TRACE 24-05-23 22:19:30[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [24]
+ERROR 24-05-23 22:19:30[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:31[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:19:31[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:31.344362]
+TRACE 24-05-23 22:19:31[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:31.344362]
+TRACE 24-05-23 22:19:31[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [25]
+ERROR 24-05-23 22:19:31[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:32[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.0]
+TRACE 24-05-23 22:19:32[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:32.357921500]
+TRACE 24-05-23 22:19:32[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:32.357921500]
+TRACE 24-05-23 22:19:32[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [26]
+ERROR 24-05-23 22:19:32[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:33[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [2.67]
+TRACE 24-05-23 22:19:33[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:33.369253200]
+TRACE 24-05-23 22:19:33[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:33.369253200]
+TRACE 24-05-23 22:19:33[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [27]
+ERROR 24-05-23 22:19:33[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:34[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.51]
+TRACE 24-05-23 22:19:34[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:34.377436]
+TRACE 24-05-23 22:19:34[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:34.377436]
+TRACE 24-05-23 22:19:34[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [28]
+ERROR 24-05-23 22:19:34[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:35[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.82]
+TRACE 24-05-23 22:19:35[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:35.389793200]
+TRACE 24-05-23 22:19:35[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:35.389793200]
+TRACE 24-05-23 22:19:35[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [29]
+ERROR 24-05-23 22:19:35[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+TRACE 24-05-23 22:19:36[scheduling-1] [bind:24] - binding parameter (1:DOUBLE) <- [0.28]
+TRACE 24-05-23 22:19:36[scheduling-1] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:19:36.404142100]
+TRACE 24-05-23 22:19:36[scheduling-1] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:19:36.404142100]
+TRACE 24-05-23 22:19:36[scheduling-1] [extract:24] - extracted value (1:BIGINT) -> [30]
+ERROR 24-05-23 22:19:36[scheduling-1] [Example:38] - An error occurred: 
+java.lang.RuntimeException: null
+	at com.terra.assignment.domain.usage.service.UsageService.saveCpuUsage(UsageService.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.terra.assignment.domain.usage.service.UsageService$$SpringCGLIB$$0.saveCpuUsage(<generated>)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+INFO  24-05-23 22:37:29[background-preinit] [Version:21] - HV000001: Hibernate Validator 8.0.1.Final
+INFO  24-05-23 22:37:29[Test worker] [UsageRepositoryTest:50] - Starting UsageRepositoryTest using Java 17.0.9 with PID 17192 (started by Èñµ¿¾ç in D:\GitHub\assignment)
+INFO  24-05-23 22:37:29[Test worker] [UsageRepositoryTest:660] - The following 1 profile is active: "dev"
+INFO  24-05-23 22:37:30[Test worker] [RepositoryConfigurationDelegate:143] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  24-05-23 22:37:30[Test worker] [RepositoryConfigurationDelegate:211] - Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+INFO  24-05-23 22:37:30[Test worker] [TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor:104] - Replacing 'dataSource' DataSource bean with embedded version
+INFO  24-05-23 22:37:30[Test worker] [EmbeddedDatabaseFactory:189] - Starting embedded database: url='jdbc:h2:mem:6b930580-25c7-465e-afb0-e804ecf7e9e9;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+INFO  24-05-23 22:37:30[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  24-05-23 22:37:30[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 6.4.4.Final
+INFO  24-05-23 22:37:30[Test worker] [RegionFactoryInitiator:50] - HHH000026: Second-level cache disabled
+INFO  24-05-23 22:37:31[Test worker] [SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  24-05-23 22:37:31[Test worker] [JtaPlatformInitiator:58] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+INFO  24-05-23 22:37:31[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  24-05-23 22:37:32[Test worker] [UsageRepositoryTest:56] - Started UsageRepositoryTest in 2.662 seconds (process running for 3.733)
+TRACE 24-05-23 22:37:32[Test worker] [bind:24] - binding parameter (1:DOUBLE) <- [0.12]
+TRACE 24-05-23 22:37:32[Test worker] [bind:24] - binding parameter (2:TIMESTAMP) <- [2024-05-23T22:37:32.576594700]
+TRACE 24-05-23 22:37:32[Test worker] [bind:24] - binding parameter (3:TIMESTAMP) <- [2024-05-23T22:37:32.576594700]
+TRACE 24-05-23 22:37:32[Test worker] [extract:24] - extracted value (1:BIGINT) -> [1]
+INFO  24-05-23 22:37:32[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:650] - Closing JPA EntityManagerFactory for persistence unit 'default'
