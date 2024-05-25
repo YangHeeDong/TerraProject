@@ -16,9 +16,9 @@ public class NotProd {
     CommandLineRunner initData(OsBean osBean, UsageRepository usageRepository) {
 
         return args -> {
-            for(int year = 2024; year<= 2027; year++){
+            for(int year = 2023; year<= 2024; year++){
                 for(int month = 1; month<=5; month++){
-                    for(int day= 1; day<=5; day++){
+                    for(int day= 1; day<=30; day++){
                         for(int hour=1; hour<=5; hour++){
                             for(int min=1; min<=5; min++){
                                 Usage usage = Usage.builder()

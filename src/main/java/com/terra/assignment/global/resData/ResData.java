@@ -8,20 +8,20 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class ResData<T> {
-    private ResCode rsCode;
+    private ResCode resCode;
     private String msg;
     private T data;
     private Boolean isSuccess;
 
-    public static <T> ResData<T> of(ResCode rsCode, String msg, T data) {
+    public static <T> ResData<T> of(ResCode resCode, String msg, T data) {
 
-        return new ResData<>(rsCode, msg, data, rsCode.getCode().startsWith("S-"));
+        return new ResData<>(resCode, msg, data, resCode.getCode().startsWith("S-"));
 
     }
 
-    public static <T> ResData<T> of(ResCode rsCode, String msg) {
+    public static <T> ResData<T> of(ResCode resCode, String msg) {
 
-        return new ResData<>(rsCode, msg, null, rsCode.getCode().startsWith("S-"));
+        return new ResData<>(resCode, msg, null, resCode.getCode().startsWith("S-"));
     }
 
 

@@ -90,7 +90,7 @@ public class UsageRepositoryTest {
         int day = 1;
 
         // when
-        List<UsageHour> statistics = usageRepository.findUsagesPerHourStatistic(year, month, day);
+        List<UsageHour> statistics = usageRepository.findUsagesPerHour(year, month, day);
 
         // then
         assertThat(statistics).isNotEmpty();
@@ -107,7 +107,7 @@ public class UsageRepositoryTest {
         int endDay = 5;
 
         // when
-        List<UsageDay> statistics = usageRepository.findUsagesPerDayStatistic(year, month, startDay, endDay);
+        List<UsageDay> statistics = usageRepository.findUsagesPerDay(year, month, startDay, endDay);
 
         // then
         assertThat(statistics).isNotEmpty();

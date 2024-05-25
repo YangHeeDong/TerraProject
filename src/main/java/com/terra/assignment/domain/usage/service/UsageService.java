@@ -4,6 +4,8 @@ import com.terra.assignment.domain.usage.dto.UsageDay;
 import com.terra.assignment.domain.usage.dto.UsageHour;
 import com.terra.assignment.domain.usage.entity.Usage;
 import com.terra.assignment.domain.usage.repository.UsageRepository;
+import com.terra.assignment.global.resData.ResCode;
+import com.terra.assignment.global.resData.ResData;
 import com.terra.assignment.global.util.OsBean;
 import io.swagger.v3.oas.models.examples.Example;
 import jakarta.transaction.Transactional;
@@ -24,23 +26,38 @@ public class UsageService {
     private final OsBean osBean;
     private static final Logger logger = LoggerFactory.getLogger(Example.class);
 
-
     // 지정한 시간 구간의 분 단위 CPU 사용률을 조회합니다.
-    public List<Usage> findUsagesPerMin(Integer year, Integer month, Integer day, Integer startHour, Integer endHour){
+    public ResData<List<Usage>> findUsagesPerMin(Integer year, Integer month, Integer day, Integer startHour, Integer endHour){
         List<Usage> usages = usageRepository.findUsagesPerMin(year,month,day,startHour,endHour);
-        return usages;
+
+        if(usages.isEmpty()) {
+            return ResData.of(ResCode.F_04,"해당 날짜의 데이터가 존재하지 않습니다.");
+        }
+
+        return ResData.of(ResCode.S_05,"조회 완료",usages);
     }
 
     // 지정한 날짜의 시 단위 CPU 최소/최대/평균 사용률을 조회합니다.
-    public List<UsageHour> findUsagesPerHour(Integer year, Integer month, Integer day ){
-        List<UsageHour> usages = usageRepository.findUsagesPerHourStatistic(year,month,day);
-        return usages;
+    public ResData<List<UsageHour>> findUsagesPerHour(Integer year, Integer month, Integer day ){
+        List<UsageHour> usages = usageRepository.findUsagesPerHour(year,month,day);
+
+        if(usages.isEmpty()) {
+            return ResData.of(ResCode.F_04,"해당 날짜의 데이터가 존재하지 않습니다.");
+        }
+
+        return ResData.of(ResCode.S_05,"조회 완료",usages);
     }
 
     // 지정한 날짜 구간의 일 단위 CPU 최소/최대/평균 사용률을 조회합니다.
-    public List<UsageDay> findUsagesPerDay(Integer year, Integer month, Integer startDay, Integer endDay ){
-        List<UsageDay> usages = usageRepository.findUsagesPerDayStatistic(year,month,startDay,endDay);
-        return usages;
+    public ResData<List<UsageDay>> findUsagesPerDay(Integer year, Integer month, Integer startDay, Integer endDay ){
+
+        List<UsageDay> usages = usageRepository.findUsagesPerDay(year,month,startDay,endDay);
+
+        if(usages.isEmpty()) {
+            return ResData.of(ResCode.F_04,"해당 날짜의 데이터가 존재하지 않습니다.");
+        }
+
+        return ResData.of(ResCode.S_05,"조회 완료",usages);
     }
 
 

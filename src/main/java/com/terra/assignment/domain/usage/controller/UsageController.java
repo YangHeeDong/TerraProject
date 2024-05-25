@@ -10,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -22,7 +21,7 @@ public class UsageController {
 
 
     @GetMapping("/perMin")
-    public ResData getUsagesPerMin(@RequestParam(value="year", required=false) Integer year,
+    public ResData<List<Usage>> getUsagesPerMin(@RequestParam(value="year", required=false) Integer year,
                                    @RequestParam(value="month", required=false) Integer month,
                                    @RequestParam(value="day", required=false) Integer day,
                                    @RequestParam(value="startHour", required=false) Integer startHour,
@@ -35,16 +34,14 @@ public class UsageController {
         if(startHour > endHour){
             return ResData.of(ResCode.F_06,"시작시간이 종료시간보다 클 수 없습니다.");
         }
-        // 데이터 제공 기간 확인
-        if(LocalDateTime.now().minusWeeks(1L).isBefore(LocalDateTime.of(year,month,day,startHour,0))){
+
+        // 최근 1주 데이터 제공
+        // 요청 날짜가 최근 1주 보다 더 전이라면
+        if(LocalDate.of(year,month,day).isBefore(LocalDate.now().minusWeeks(1L))){
             return ResData.of(ResCode.F_06,"데이터 제공 기간이 지났습니다.");
         }
 
-        // 최근 1주 데이터 제공
-
-        List<Usage> usages = usageService.findUsagesPerMin(year,month,day,startHour,endHour);
-
-        return ResData.of(ResCode.S_05,"조회 성공", usages);
+        return usageService.findUsagesPerMin(year,month,day,startHour,endHour);
     }
 
 
@@ -54,13 +51,16 @@ public class UsageController {
                                    @RequestParam(value="day", required=false) Integer day) {
         // 데이터 검증
         if(year == null || month == null || day == null ) {
-            ResData.of(ResCode.F_06,"잘못된 요청 파라미터 입니다.");
+            return ResData.of(ResCode.F_06,"잘못된 요청 파라미터 입니다.");
         }
+
         // 최근 3달 데이터 제공
+        // 요청 날짜가 최근 3달 보다 더 전이라면
+        if(LocalDate.of(year,month,day).isBefore(LocalDate.now().minusMonths(3))){
+            return ResData.of(ResCode.F_06,"데이터 제공 기간이 지났습니다.");
+        }
 
-        List<UsageHour> usages = usageService.findUsagesPerHour(year,month,day);
-
-        return ResData.of(ResCode.S_05,"조회 성공", usages);
+        return usageService.findUsagesPerHour(year,month,day);
     }
 
     @GetMapping("/perDay")
@@ -76,9 +76,13 @@ public class UsageController {
             return ResData.of(ResCode.F_06,"시작일이 종료일 보다 클 수 없습니다.");
         }
 
-        List<UsageDay> usages = usageService.findUsagesPerDay(year,month,startDay,endDay);
+        // 최근 1년 데이터 제공
+        // 요청 날짜가 최근 1년 보다 더 전이라면
+        if(LocalDate.of(year,month,startDay).isBefore(LocalDate.now().minusYears(1))){
+            return ResData.of(ResCode.F_06,"데이터 제공 기간이 지났습니다.");
+        }
 
-        return ResData.of(ResCode.S_05,"조회 성공", usages);
+        return usageService.findUsagesPerDay(year,month,startDay,endDay);
     }
 
 }

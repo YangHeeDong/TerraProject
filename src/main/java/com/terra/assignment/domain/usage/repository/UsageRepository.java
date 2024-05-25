@@ -29,7 +29,7 @@ public interface UsageRepository extends JpaRepository<Usage, Long> {
             "FROM Usage u " +
             "GROUP BY u.yearColumn,u.monthColumn,u.dayColumn,u.hourColumn "+
             "HAVING u.yearColumn=:year AND u.monthColumn=:month AND u.dayColumn=:day")
-    List<UsageHour> findUsagesPerHourStatistic(@Param("year") Integer year, @Param("month") Integer month, @Param("day") Integer day);
+    List<UsageHour> findUsagesPerHour(@Param("year") Integer year, @Param("month") Integer month, @Param("day") Integer day);
 
     @Query(value = "SELECT new com.terra.assignment.domain.usage.dto.UsageDay(" +
             "u.yearColumn, u.monthColumn, u.dayColumn, " +
@@ -37,5 +37,5 @@ public interface UsageRepository extends JpaRepository<Usage, Long> {
             "FROM Usage u " +
             "GROUP BY u.yearColumn, u.monthColumn, u.dayColumn "+
             "HAVING u.yearColumn=:year AND u.monthColumn=:month AND u.dayColumn BETWEEN :startDay AND :endDay")
-    List<UsageDay> findUsagesPerDayStatistic(@Param("year") Integer year, @Param("month") Integer month, @Param("startDay") Integer startDay, @Param("endDay") Integer endDay);
+    List<UsageDay> findUsagesPerDay(@Param("year") Integer year, @Param("month") Integer month, @Param("startDay") Integer startDay, @Param("endDay") Integer endDay);
 }
