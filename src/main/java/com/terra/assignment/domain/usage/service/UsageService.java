@@ -2,6 +2,7 @@ package com.terra.assignment.domain.usage.service;
 
 import com.terra.assignment.domain.usage.dto.UsageDay;
 import com.terra.assignment.domain.usage.dto.UsageHour;
+import com.terra.assignment.domain.usage.dto.UsageMin;
 import com.terra.assignment.domain.usage.entity.Usage;
 import com.terra.assignment.domain.usage.repository.UsageRepository;
 import com.terra.assignment.global.resData.ResCode;
@@ -27,8 +28,8 @@ public class UsageService {
     private static final Logger logger = LoggerFactory.getLogger(Example.class);
 
     // 지정한 시간 구간의 분 단위 CPU 사용률을 조회합니다.
-    public ResData<List<Usage>> findUsagesPerMin(Integer year, Integer month, Integer day, Integer startHour, Integer endHour){
-        List<Usage> usages = usageRepository.findUsagesPerMin(year,month,day,startHour,endHour);
+    public ResData<List<UsageMin>> findUsagesPerMin(Integer year, Integer month, Integer day, Integer startHour, Integer endHour){
+        List<UsageMin> usages = usageRepository.findUsagesPerMin(year,month,day,startHour,endHour).stream().map(UsageMin::new).toList();
 
         if(usages.isEmpty()) {
             return ResData.of(ResCode.F_04,"해당 날짜의 데이터가 존재하지 않습니다.");

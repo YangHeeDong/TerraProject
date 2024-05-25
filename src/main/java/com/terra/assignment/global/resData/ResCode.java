@@ -1,10 +1,12 @@
 package com.terra.assignment.global.resData;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 
 @Getter
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
+@Schema(description = "Response code enum")
 public enum ResCode {
 
     S_01("S-01","Success"),
@@ -32,6 +34,7 @@ public enum ResCode {
     ;
 
     private String code;
+
     private String keyWord;
 
     ResCode(String code,String keyWord) {

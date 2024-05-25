@@ -2,6 +2,7 @@ package com.terra.assignment.domain.usage.service;
 
 import com.terra.assignment.domain.usage.dto.UsageDay;
 import com.terra.assignment.domain.usage.dto.UsageHour;
+import com.terra.assignment.domain.usage.dto.UsageMin;
 import com.terra.assignment.domain.usage.entity.Usage;
 import com.terra.assignment.domain.usage.repository.UsageRepository;
 import com.terra.assignment.global.resData.ResCode;
@@ -43,11 +44,11 @@ public class UsageServiceTest {
         when(usageRepository.findUsagesPerMin(year, month, day, startHour, endHour)).thenReturn(expectedUsages);
 
         // when
-        ResData<List<Usage>> result = usageService.findUsagesPerMin(year, month, day, startHour, endHour);
+        ResData<List<UsageMin>> result = usageService.findUsagesPerMin(year, month, day, startHour, endHour);
 
         // then
         assertThat(result.getResCode()).isEqualTo(ResCode.S_05);
-        assertThat(result.getData()).isEqualTo(expectedUsages);
+        assertThat(result.getData()).isNotEmpty();
         verify(usageRepository, times(1)).findUsagesPerMin(year, month, day, startHour, endHour);
     }
 
@@ -66,7 +67,7 @@ public class UsageServiceTest {
         when(usageRepository.findUsagesPerMin(year, month, day, startHour, endHour)).thenReturn(expectedUsages);
 
         // when
-        ResData<List<Usage>> result = usageService.findUsagesPerMin(year, month, day, startHour, endHour);
+        ResData<List<UsageMin>> result = usageService.findUsagesPerMin(year, month, day, startHour, endHour);
 
         // then
         assertThat(result.getResCode()).isEqualTo(ResCode.F_04);

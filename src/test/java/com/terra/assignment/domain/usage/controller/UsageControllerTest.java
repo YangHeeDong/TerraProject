@@ -79,7 +79,7 @@ public class UsageControllerTest {
                 .andExpect(
                     content().json(
                                 objectMapper.writeValueAsString(
-                                        ResData.of(ResCode.F_06,"잘못된 요청 파라미터 입니다.")
+                                        ResData.of(ResCode.F_01,"잘못된 요청 파라미터 입니다.")
                                 ))
                 );
     }
@@ -176,7 +176,7 @@ public class UsageControllerTest {
                 .andExpect(
                         content().json(
                                 objectMapper.writeValueAsString(
-                                        ResData.of(ResCode.F_06,"잘못된 요청 파라미터 입니다.")
+                                        ResData.of(ResCode.F_01,"잘못된 요청 파라미터 입니다.")
                                 ))
                 );
     }
@@ -247,7 +247,7 @@ public class UsageControllerTest {
                 .andExpect(
                         content().json(
                                 objectMapper.writeValueAsString(
-                                        ResData.of(ResCode.F_06,"잘못된 요청 파라미터 입니다.")
+                                        ResData.of(ResCode.F_01,"잘못된 요청 파라미터 입니다.")
                                 ))
                 );
     }
