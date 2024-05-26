@@ -55,6 +55,13 @@
 - Swagger를 사용하여 API 문서화
   - spring doc 를 이용한 Swagger ui 문서 작성
   - http://localhost:8090/swagger-ui/index.html#/
+
+- 예외 처리
+  - 데이터 수집시 try, catch 문을 이용한 예외 처리 및 logback 을 이용한 에러 코드 log 저장 
+  - API 요청 시 잘못된 파라미터에 대한 예외
+    - if 문으로 분기 처리 및 에러 응답 전송 
+
+
 <hr>
 
 ## API 문서
