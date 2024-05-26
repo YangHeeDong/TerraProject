@@ -2,7 +2,7 @@ package com.terra.assignment.domain.usage.repository;
 
 import com.terra.assignment.domain.usage.dto.UsageDay;
 import com.terra.assignment.domain.usage.dto.UsageHour;
-import com.terra.assignment.domain.usage.entity.Usage;
+import com.terra.assignment.domain.usage.entity.UsageData;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -27,7 +27,7 @@ public class UsageRepositoryTest {
             for(int day= 1; day<=5; day++){
                 for(int hour=1; hour<=5; hour++){
                     for(int min=1; min<=5; min++){
-                        Usage usage = Usage.builder()
+                        UsageData usage = UsageData.builder()
                                 .cpuUsage(0.12)
                                 .yearColumn(2024)
                                 .monthColumn(month)
@@ -48,12 +48,12 @@ public class UsageRepositoryTest {
     public void testSaveUsage() {
 
         // given
-        Usage usage = Usage.builder()
+        UsageData usage = UsageData.builder()
                 .cpuUsage(0.12)
                 .build();
 
         // when
-        Usage savedUsage = usageRepository.save(usage);
+        UsageData savedUsage = usageRepository.save(usage);
 
         // then
         assertThat(savedUsage).isNotNull();
@@ -74,7 +74,7 @@ public class UsageRepositoryTest {
         int endHour = 5;
 
         // when
-        List<Usage> usages = usageRepository.findUsagesPerMin(year, month, day, startHour, endHour);
+        List<UsageData> usages = usageRepository.findUsagesPerMin(year, month, day, startHour, endHour);
 
         // then
         assertThat(usages).isNotEmpty();

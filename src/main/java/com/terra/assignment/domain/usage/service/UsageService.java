@@ -3,7 +3,7 @@ package com.terra.assignment.domain.usage.service;
 import com.terra.assignment.domain.usage.dto.UsageDay;
 import com.terra.assignment.domain.usage.dto.UsageHour;
 import com.terra.assignment.domain.usage.dto.UsageMin;
-import com.terra.assignment.domain.usage.entity.Usage;
+import com.terra.assignment.domain.usage.entity.UsageData;
 import com.terra.assignment.domain.usage.repository.UsageRepository;
 import com.terra.assignment.global.resData.ResCode;
 import com.terra.assignment.global.resData.ResData;
@@ -32,7 +32,7 @@ public class UsageService {
         List<UsageMin> usages = usageRepository.findUsagesPerMin(year,month,day,startHour,endHour).stream().map(UsageMin::new).toList();
 
         if(usages.isEmpty()) {
-            return ResData.of(ResCode.F_04,"해당 날짜의 데이터가 존재하지 않습니다.");
+            return ResData.of(ResCode.F_04,"해당 데이터가 존재하지 않습니다.");
         }
 
         return ResData.of(ResCode.S_05,"조회 완료",usages);
@@ -43,7 +43,7 @@ public class UsageService {
         List<UsageHour> usages = usageRepository.findUsagesPerHour(year,month,day);
 
         if(usages.isEmpty()) {
-            return ResData.of(ResCode.F_04,"해당 날짜의 데이터가 존재하지 않습니다.");
+            return ResData.of(ResCode.F_04,"해당 데이터가 존재하지 않습니다.");
         }
 
         return ResData.of(ResCode.S_05,"조회 완료",usages);
@@ -55,7 +55,7 @@ public class UsageService {
         List<UsageDay> usages = usageRepository.findUsagesPerDay(year,month,startDay,endDay);
 
         if(usages.isEmpty()) {
-            return ResData.of(ResCode.F_04,"해당 날짜의 데이터가 존재하지 않습니다.");
+            return ResData.of(ResCode.F_04,"해당 데이터가 존재하지 않습니다.");
         }
 
         return ResData.of(ResCode.S_05,"조회 완료",usages);
@@ -71,7 +71,7 @@ public class UsageService {
         try {
             LocalDateTime localDateTime = LocalDateTime.now();
 
-            Usage usage = Usage.builder()
+            UsageData usage = UsageData.builder()
                     .cpuUsage(osBean.getCPUProcess())
                     .yearColumn(localDateTime.getYear())
                     .monthColumn(localDateTime.getMonthValue())

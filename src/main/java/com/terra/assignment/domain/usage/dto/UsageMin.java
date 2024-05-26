@@ -1,6 +1,6 @@
 package com.terra.assignment.domain.usage.dto;
 
-import com.terra.assignment.domain.usage.entity.Usage;
+import com.terra.assignment.domain.usage.entity.UsageData;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -32,7 +32,7 @@ public class UsageMin {
     @Schema(description = "cpu 사용률", example = "1.24")
     private Double cpuUsage;
 
-    public UsageMin (Usage usage) {
+    public UsageMin (UsageData usage) {
         this.yearColumn = usage.getYearColumn();
         this.monthColumn = usage.getMonthColumn();
         this.dayColumn = usage.getYearColumn();

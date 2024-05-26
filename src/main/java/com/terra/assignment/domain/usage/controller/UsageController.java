@@ -47,13 +47,13 @@ public class UsageController {
                     content = @Content(
                             mediaType = "application/json",
                             schema = @Schema(implementation = ResData.class),
-                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-04\", \"keyWord\": \"Not Found\"}, \"msg\": \"해당 날짜의 데이터가 존재하지 않습니다.\", \"data\": null, \"isSuccess\": false}")
+                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-04\", \"keyWord\": \"Not Found\"}, \"msg\": \"해당 데이터가 존재하지 않습니다.\", \"data\": null, \"isSuccess\": false}")
                     )),
             @ApiResponse(responseCode = "F-06", description = "Validation Error",
                     content = @Content(
                             mediaType = "application/json",
                             schema = @Schema(implementation = ResData.class),
-                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-06\", \"keyWord\": \"Validation Error\"}, \"msg\": \"잘못된 요청 파라미터 입니다.\", \"data\": null, \"isSuccess\": false}")
+                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-06\", \"keyWord\": \"Validation Error\"}, \"msg\": \"시작시간이 종료시간보다 클 수 없습니다. \", \"data\": null, \"isSuccess\": false}")
                     ))
     })
     public ResData<List<UsageMin>> getUsagesPerMin(@RequestParam(value="year", required=false) Integer year,
@@ -73,7 +73,7 @@ public class UsageController {
         // 최근 1주 데이터 제공
         // 요청 날짜가 최근 1주 보다 더 전이라면
         if(LocalDate.of(year,month,day).isBefore(LocalDate.now().minusWeeks(1L))){
-            return ResData.of(ResCode.F_06,"데이터 제공 기간이 지났습니다.");
+            return ResData.of(ResCode.F_04,"데이터 제공 기간이 지났습니다.");
         }
 
         return usageService.findUsagesPerMin(year,month,day,startHour,endHour);
@@ -99,13 +99,7 @@ public class UsageController {
                     content = @Content(
                             mediaType = "application/json",
                             schema = @Schema(implementation = ResData.class),
-                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-04\", \"keyWord\": \"Not Found\"}, \"msg\": \"해당 날짜의 데이터가 존재하지 않습니다.\", \"data\": null, \"isSuccess\": false}")
-                    )),
-            @ApiResponse(responseCode = "F-06", description = "Validation Error",
-                    content = @Content(
-                            mediaType = "application/json",
-                            schema = @Schema(implementation = ResData.class),
-                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-06\", \"keyWord\": \"Validation Error\"}, \"msg\": \"잘못된 요청 파라미터 입니다.\", \"data\": null, \"isSuccess\": false}")
+                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-04\", \"keyWord\": \"Not Found\"}, \"msg\": \"해당 데이터가 존재하지 않습니다.\", \"data\": null, \"isSuccess\": false}")
                     ))
     })
     public ResData<List<UsageHour>> getUsagesPerHour(@RequestParam(value="year", required=false) Integer year,
@@ -119,7 +113,7 @@ public class UsageController {
         // 최근 3달 데이터 제공
         // 요청 날짜가 최근 3달 보다 더 전이라면
         if(LocalDate.of(year,month,day).isBefore(LocalDate.now().minusMonths(3))){
-            return ResData.of(ResCode.F_06,"데이터 제공 기간이 지났습니다.");
+            return ResData.of(ResCode.F_04,"데이터 제공 기간이 지났습니다.");
         }
 
         return usageService.findUsagesPerHour(year,month,day);
@@ -144,13 +138,13 @@ public class UsageController {
                     content = @Content(
                             mediaType = "application/json",
                             schema = @Schema(implementation = ResData.class),
-                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-04\", \"keyWord\": \"Not Found\"}, \"msg\": \"해당 날짜의 데이터가 존재하지 않습니다.\", \"data\": null, \"isSuccess\": false}")
+                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-04\", \"keyWord\": \"Not Found\"}, \"msg\": \"해당 데이터가 존재하지 않습니다.\", \"data\": null, \"isSuccess\": false}")
                     )),
             @ApiResponse(responseCode = "F-06", description = "Validation Error",
                     content = @Content(
                             mediaType = "application/json",
                             schema = @Schema(implementation = ResData.class),
-                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-06\", \"keyWord\": \"Validation Error\"}, \"msg\": \"잘못된 요청 파라미터 입니다.\", \"data\": null, \"isSuccess\": false}")
+                            examples = @ExampleObject(value = "{\"resCode\": {\"code\": \"F-06\", \"keyWord\": \"Validation Error\"}, \"msg\": \"시작일이 종료일 보다 클 수 없습니다.\", \"data\": null, \"isSuccess\": false}")
                     ))
     })
     public ResData<List<UsageDay>> getUsagesPerDay(@RequestParam(value="year", required=false) Integer year,
@@ -168,7 +162,7 @@ public class UsageController {
         // 최근 1년 데이터 제공
         // 요청 날짜가 최근 1년 보다 더 전이라면
         if(LocalDate.of(year,month,startDay).isBefore(LocalDate.now().minusYears(1))){
-            return ResData.of(ResCode.F_06,"데이터 제공 기간이 지났습니다.");
+            return ResData.of(ResCode.F_04,"데이터 제공 기간이 지났습니다.");
         }
 
         return usageService.findUsagesPerDay(year,month,startDay,endDay);

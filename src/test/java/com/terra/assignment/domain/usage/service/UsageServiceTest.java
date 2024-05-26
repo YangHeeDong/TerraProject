@@ -3,7 +3,7 @@ package com.terra.assignment.domain.usage.service;
 import com.terra.assignment.domain.usage.dto.UsageDay;
 import com.terra.assignment.domain.usage.dto.UsageHour;
 import com.terra.assignment.domain.usage.dto.UsageMin;
-import com.terra.assignment.domain.usage.entity.Usage;
+import com.terra.assignment.domain.usage.entity.UsageData;
 import com.terra.assignment.domain.usage.repository.UsageRepository;
 import com.terra.assignment.global.resData.ResCode;
 import com.terra.assignment.global.resData.ResData;
@@ -38,7 +38,7 @@ public class UsageServiceTest {
         int day = 1;
         int startHour = 1;
         int endHour = 5;
-        List<Usage> expectedUsages = Arrays.asList(new Usage());
+        List<UsageData> expectedUsages = Arrays.asList(new UsageData());
 
         // Mock인 usageRepository의 동작 정의
         when(usageRepository.findUsagesPerMin(year, month, day, startHour, endHour)).thenReturn(expectedUsages);
@@ -61,7 +61,7 @@ public class UsageServiceTest {
         int day = 1;
         int startHour = 1;
         int endHour = 5;
-        List<Usage> expectedUsages = Arrays.asList();
+        List<UsageData> expectedUsages = Arrays.asList();
 
         // Mock인 usageRepository의 동작 정의
         when(usageRepository.findUsagesPerMin(year, month, day, startHour, endHour)).thenReturn(expectedUsages);
