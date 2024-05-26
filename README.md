@@ -183,3 +183,5 @@
 
 <br>
 
+- 프로젝트 관리 및 진행도
+  - https://github.com/users/YangHeeDong/projects/6
