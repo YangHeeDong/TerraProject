@@ -22,6 +22,8 @@
    - CREATE DATABASE TERRA
 2. 프로젝트 clone 후 해당 프로젝트에서 gradle build
    - ./gradlew build
+   - 만약 테스트 코드 때문에 빌드가 안된다면 	
+     -  ./gradlew build -x test
 3. 빌드된 jar 파일 prod 환경으로 실행
    - java -Dspring.profiles.active=prod -jar build/libs/assignment-0.0.1-SNAPSHOT.jar
 <hr>

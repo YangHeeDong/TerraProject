@@ -129,7 +129,7 @@ public class UsageControllerTest {
                 .andExpect(
                         content().json(
                                 objectMapper.writeValueAsString(
-                                        ResData.of(ResCode.F_06,"데이터 제공 기간이 지났습니다.")
+                                        ResData.of(ResCode.F_04,"데이터 제공 기간이 지났습니다.")
                                 ))
                 );
     }
@@ -199,7 +199,7 @@ public class UsageControllerTest {
                 .andExpect(
                         content().json(
                                 objectMapper.writeValueAsString(
-                                        ResData.of(ResCode.F_06,"데이터 제공 기간이 지났습니다.")
+                                        ResData.of(ResCode.F_04,"데이터 제공 기간이 지났습니다.")
                                 ))
                 );
     }
@@ -294,7 +294,7 @@ public class UsageControllerTest {
                 .andExpect(
                         content().json(
                                 objectMapper.writeValueAsString(
-                                        ResData.of(ResCode.F_06,"데이터 제공 기간이 지났습니다.")
+                                        ResData.of(ResCode.F_04,"데이터 제공 기간이 지났습니다.")
                                 ))
                 );
     }
